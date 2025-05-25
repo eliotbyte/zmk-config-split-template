@@ -55,7 +55,7 @@ jobs:
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 corne_left_nice_nano_v2.uf2
       - name: Archive (corne Left)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: firmware-left
           path: corne_left_nice_nano_v2.uf2
@@ -74,7 +74,7 @@ jobs:
       - name: Rename zmk.uf2 (Right)
         run: cp build/zephyr/zmk.uf2 corne_right_nice_nano_v2.uf2
       - name: Archive (corne Right)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: firmware-right
           path: corne_right_nice_nano_v2.uf2
