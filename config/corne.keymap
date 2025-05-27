@@ -73,13 +73,13 @@
                 combo_alt_rse {
                         timeout-ms = <50>;
                         key-positions = <13 14>; // RALT and RSE positions
-                        bindings = <&macro_press &kp LCTRL &kp LSHIFT &kp N1 &macro_release &kp LCTRL &kp LSHIFT &kp N1 &to 3>; // Send LC(LS(1)) and switch to Russian layer
+                        bindings = <&kp LC(LS(1)) &to 3>; // Send LC(LS(1)) and switch to Russian layer
                         layers = <0>; // Only on default layer
                 };
                 combo_alt {
                         timeout-ms = <50>;
                         key-positions = <13>; // RALT position
-                        bindings = <&macro_press &kp LCTRL &kp LSHIFT &kp N0 &macro_release &kp LCTRL &kp LSHIFT &kp N0 &to 0>; // Send LC(LS(0)) and switch to default layer
+                        bindings = <&kp LC(LS(0)) &to 0>; // Send LC(LS(0)) and switch to default layer
                         layers = <3>; // Only on Russian layer
                 };
         };
