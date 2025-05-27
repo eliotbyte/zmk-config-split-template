@@ -3,10 +3,10 @@
     lt_alt: behavior_hold_tap {
       compatible = "zmk,behavior-hold-tap";
       label = "LT(0, RALT)";
-      #binding-cells = <2>; // важно: два параметра!
+      #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <200>;
-      bindings = <&kp RALT &to 0>;
+      bindings = <&kp>, <&to>;
     };
   };
 };
