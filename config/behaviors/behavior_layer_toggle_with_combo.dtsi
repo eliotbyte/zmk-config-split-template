@@ -1,0 +1,15 @@
+/ {
+  behaviors {
+    lt_combo: behavior_layer_toggle_with_combo {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LAYER_TOGGLE_WITH_COMBO";
+      #binding-cells = <3>;
+      flavor = "tap-preferred";
+      tapping-term-ms = <200>;
+      bindings = <&to>, <&kp>;
+      hold-trigger-key-positions = <0>;
+      hold-trigger-on-release;
+      require-prior-idle-ms = <100>;
+    };
+  };
+}; 
