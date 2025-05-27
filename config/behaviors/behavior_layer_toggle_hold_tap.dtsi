@@ -1,12 +1,15 @@
 / {
   behaviors {
-    lt_alt: behavior_layer_toggle_hold_tap {
+    lt_alt: behavior_hold_tap {
       compatible = "zmk,behavior-hold-tap";
-      label = "LAYER_TOGGLE_HOLD_TAP";
-      #binding-cells = <2>;
-      flavor = "tap-preferred";
+      label = "LT(0, RALT)";
+      #binding-cells = <2>; // важно: два параметра!
+      flavor = "hold-preferred";
       tapping-term-ms = <200>;
-      bindings = <&kp>, <&to>;
+      bindings = <&kp RALT>, <&to 0>;
     };
   };
-}; 
+};
+&behaviors {
+  lt_alt = &lt_alt;
+};
