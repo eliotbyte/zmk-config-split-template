@@ -72,7 +72,7 @@
                 compatible = "zmk,combos";
                 combo_alt_rse {
                         timeout-ms = <50>;
-                        key-positions = <13 14>; // RALT and RSE positions
+                        key-positions = <13>; // RALT position
                         bindings = <&kp LC(LS(1)) &to 3>; // Send LC(LS(1)) and switch to Russian layer
                         layers = <0>; // Only on default layer
                 };
