@@ -1,12 +1,12 @@
 / {
   behaviors {
-    lt_esc_rus: behavior_layer_toggle_hold_tap {
+    lt_esc: behavior_layer_toggle_hold_tap {
       compatible = "zmk,behavior-hold-tap";
-      label = "LAYER_TOGGLE_HOLD_TAP_RUS";
+      label = "LAYER_TOGGLE_HOLD_TAP";
       #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&to>, <&kp LC(LS(N1))>;
+      bindings = <&to>, <&kp>;
     };
   };
 };
