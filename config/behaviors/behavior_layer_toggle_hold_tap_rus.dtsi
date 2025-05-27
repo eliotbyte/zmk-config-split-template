@@ -6,7 +6,7 @@
       #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&to>, <&kp>;
+      bindings = <&to>, <&kp LC(LS(N1))>;
     };
   };
 };
