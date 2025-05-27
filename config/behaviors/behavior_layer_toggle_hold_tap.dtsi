@@ -1,10 +1,10 @@
 / {
   behaviors {
-    lt_esc: behavior_hold_tap {
+    lt_esc: behavior_layer_toggle_hold_tap {
       compatible = "zmk,behavior-hold-tap";
-      label = "LT(0, ESC)";
+      label = "LAYER_TOGGLE_HOLD_TAP";
       #binding-cells = <2>;
-      flavor = "hold-preferred";
+      flavor = "tap-preferred";
       tapping-term-ms = <200>;
       bindings = <&to>, <&kp>;
     };
