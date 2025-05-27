@@ -10,6 +10,3 @@
     };
   };
 };
-&behaviors {
-  lt_alt = &lt_alt;
-};
