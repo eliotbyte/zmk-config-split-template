@@ -1,23 +1,21 @@
 / {
   behaviors {
     lt_esc_russian: lt_esc_russian {
-      compatible = "zmk,behavior-macro";
+      compatible = "zmk,behavior-hold-tap";
       label = "LT_ESC_RUSSIAN";
       #binding-cells = <0>;
-      bindings = <
-        &to 3
-        &kp LC(LS(N1))
-      >;
+      flavor = "tap-preferred";
+      tapping-term-ms = <200>;
+      bindings = < &to 3 &kp LC(LS(N1)) >;
     };
 
     lt_esc_default: lt_esc_default {
-      compatible = "zmk,behavior-macro";
+      compatible = "zmk,behavior-hold-tap";
       label = "LT_ESC_DEFAULT";
       #binding-cells = <0>;
-      bindings = <
-        &to 0
-        &kp LC(LS(N0))
-      >;
+      flavor = "tap-preferred";
+      tapping-term-ms = <200>;
+      bindings = < &to 0 &kp LC(LS(N0)) >;
     };
   };
 };
