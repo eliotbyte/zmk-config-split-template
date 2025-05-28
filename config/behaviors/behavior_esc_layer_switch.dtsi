@@ -17,7 +17,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&esc_layer_switch 3 LC(LS(N1)) &kp ESC>;
+      bindings = <&esc_layer_switch 3 LC(LS(N1))>, <&kp ESC>;
     };
 
     lt_esc_default: lt_esc_default_behavior {
@@ -26,7 +26,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&esc_layer_switch 0 LC(LS(N0)) &kp ESC>;
+      bindings = <&esc_layer_switch 0 LC(LS(N0))>, <&kp ESC>;
     };
   };
 }; 
