@@ -1,13 +1,24 @@
 / {
   behaviors {
-    esc_layer_switch: behavior_macro_two_param {
-      compatible = "zmk,behavior-macro-two-param";
-      #binding-cells = <2>;
+    macro_to_russian: macro_to_russian {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
       wait-ms = <0>;
       tap-ms = <0>;
       bindings = <
-        &macro_param_1to1 &to MACRO_PLACEHOLDER
-        &macro_param_2to1 &kp MACRO_PLACEHOLDER
+        &to 3
+        &kp LC(LS(N1))
+      >;
+    };
+
+    macro_to_default: macro_to_default {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <0>;
+      tap-ms = <0>;
+      bindings = <
+        &to 0
+        &kp LC(LS(N0))
       >;
     };
 
@@ -17,7 +28,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&esc_layer_switch 3 LC(LS(N1))>, <&kp ESC>;
+      bindings = <&macro_to_russian>, <&kp ESC>;
     };
 
     lt_esc_default: lt_esc_default_behavior {
@@ -26,7 +37,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&esc_layer_switch 0 LC(LS(N0))>, <&kp ESC>;
+      bindings = <&macro_to_default>, <&kp ESC>;
     };
   };
 }; 
