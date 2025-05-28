@@ -28,7 +28,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&macro_to_russian>, <&kp ESC>;
+      bindings = <&macro_to_russian &kp ESC>;
     };
 
     lt_esc_default: lt_esc_default_behavior {
@@ -37,7 +37,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&macro_to_default>, <&kp ESC>;
+      bindings = <&macro_to_default &kp ESC>;
     };
   };
 }; 
