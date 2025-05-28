@@ -1,17 +1,17 @@
 / {
   behaviors {
-    macro_to_russian: macro {
+    esc_macro_to_russian: macro {
       compatible = "zmk,behavior-macro";
-      label = "TO_RUSSIAN";
+      label = "ESC_TO_RUSSIAN";
       bindings = <
         &to 3
         &kp LC(LS(N1))
       >;
     };
 
-    macro_to_default: macro {
+    esc_macro_to_default: macro {
       compatible = "zmk,behavior-macro";
-      label = "TO_DEFAULT";
+      label = "ESC_TO_DEFAULT";
       bindings = <
         &to 0
         &kp LC(LS(N0))
@@ -24,7 +24,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&macro_to_russian>, <&kp ESC>;
+      bindings = <&esc_macro_to_russian>, <&kp ESC>;
     };
 
     lt_esc_default: behavior_hold_tap {
@@ -33,7 +33,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&macro_to_default>, <&kp ESC>;
+      bindings = <&esc_macro_to_default>, <&kp ESC>;
     };
   };
 }; 
