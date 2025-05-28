@@ -1,21 +1,35 @@
 / {
   behaviors {
-    lt_esc_russian: lt_esc_russian {
-      compatible = "zmk,behavior-hold-tap";
-      label = "LT_ESC_RUSSIAN";
+    macro_to_rus: macro_to_rus {
+      compatible = "zmk,behavior-macro";
+      label = "MACRO_TO_RUS";
       #binding-cells = <0>;
-      flavor = "tap-preferred";
-      tapping-term-ms = <200>;
       bindings = < &to 3 &kp LC(LS(N1)) >;
     };
 
-    lt_esc_default: lt_esc_default {
-      compatible = "zmk,behavior-hold-tap";
-      label = "LT_ESC_DEFAULT";
+    macro_to_eng: macro_to_eng {
+      compatible = "zmk,behavior-macro";
+      label = "MACRO_TO_ENG";
       #binding-cells = <0>;
-      flavor = "tap-preferred";
-      tapping-term-ms = <200>;
       bindings = < &to 0 &kp LC(LS(N0)) >;
+    };
+
+    lt_to_rus: lt_to_rus {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LT_TO_RUS";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      flavor = "tap-preferred";
+      bindings = <&macro_to_rus>, <&kp>;
+    };
+
+    lt_to_eng: lt_to_eng {
+      compatible = "zmk,behavior-hold-tap";
+      label = "LT_TO_ENG";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      flavor = "tap-preferred";
+      bindings = <&macro_to_eng>, <&kp>;
     };
   };
 };
