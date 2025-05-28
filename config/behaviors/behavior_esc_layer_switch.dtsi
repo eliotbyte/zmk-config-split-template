@@ -16,7 +16,7 @@
 
     to_rus: to_rus {
       compatible = "zmk,behavior-hold-tap";
-      label = "LT_TO_RUS";
+      label = "TO_RUS";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       flavor = "tap-preferred";
@@ -25,16 +25,16 @@
 
     to_eng: to_eng {
       compatible = "zmk,behavior-hold-tap";
-      label = "LT_TO_ENG";
+      label = "TO_ENG";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&macro_to_eng>;
     };
 
-    lt_hold: lt_hold {
+    hold: hold {
       compatible = "zmk,behavior-hold-tap";
-      label = "LT_HOLD";
+      label = "HOLD";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       flavor = "tap-preferred";

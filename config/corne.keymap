@@ -61,10 +61,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  | M ] |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &lt_hold GRAVE T   &kp Y &kp U           &lt_hold O I &kp P   &kp LBKT &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G              &kp H &kp J           &kp K        &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B              &kp N &lt_hold RBKT M &kp COMMA    &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE              &kp RET &mo 2 &to_eng RALT 0
+   &kp TAB   &kp Q &kp W &kp E &kp R &hold GRAVE T   &kp Y   &kp U        &hold O I      &kp P   &kp LBKT &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold RBKT M &kp COMMA      &kp DOT &kp FSLH &kp ESC
+                  &kp LGUI &mo 1 &kp SPACE           &kp RET &mo 2        &to_eng RALT 0
                         >;
                 };
         };
