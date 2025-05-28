@@ -1,5 +1,5 @@
 / {
-  behaviors {
+  macros {
     macro_to_russian: macro_to_russian {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -21,7 +21,9 @@
         &kp LC(LS(N0))
       >;
     };
+  };
 
+  behaviors {
     lt_esc_russian: lt_esc_russian_behavior {
       compatible = "zmk,behavior-hold-tap";
       label = "LT_ESC_RUSSIAN";
@@ -40,4 +42,4 @@
       bindings = <&macro_to_default &kp ESC>;
     };
   };
-}; 
+};
