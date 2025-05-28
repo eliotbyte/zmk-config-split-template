@@ -5,10 +5,7 @@
       #binding-cells = <0>;
       wait-ms = <0>;
       tap-ms = <0>;
-      bindings = <
-        &to 3
-        &kp LC(LS(N1))
-      >;
+      bindings = < &to 3 &kp LC(LS(N1)) >;
     };
 
     macro_to_default: macro_to_default {
@@ -16,10 +13,7 @@
       #binding-cells = <0>;
       wait-ms = <0>;
       tap-ms = <0>;
-      bindings = <
-        &to 0
-        &kp LC(LS(N0))
-      >;
+      bindings = < &to 0 &kp LC(LS(N0)) >;
     };
   };
 
@@ -30,7 +24,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&macro_to_russian>, <&kp ESC>;
+      bindings = < &macro_to_russian &kp ESC >;
     };
 
     lt_esc_default: lt_esc_default_behavior {
@@ -39,7 +33,7 @@
       #binding-cells = <0>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
-      bindings = <&macro_to_default>, <&kp ESC>;
+      bindings = < &macro_to_default &kp ESC >;
     };
   };
 };
