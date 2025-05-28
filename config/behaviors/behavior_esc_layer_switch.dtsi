@@ -11,7 +11,7 @@
       >;
     };
 
-    lt_esc_russian: behavior_hold_tap {
+    lt_esc_russian: lt_esc_russian_behavior {
       compatible = "zmk,behavior-hold-tap";
       label = "LT_ESC_RUSSIAN";
       #binding-cells = <0>;
@@ -20,7 +20,7 @@
       bindings = <&esc_layer_switch 3 LC(LS(N1))>, <&kp ESC>;
     };
 
-    lt_esc_default: behavior_hold_tap {
+    lt_esc_default: lt_esc_default_behavior {
       compatible = "zmk,behavior-hold-tap";
       label = "LT_ESC_DEFAULT";
       #binding-cells = <0>;
