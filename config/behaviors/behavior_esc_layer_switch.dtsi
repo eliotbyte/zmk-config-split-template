@@ -4,7 +4,7 @@
       compatible = "zmk,behavior-macro";
       label = "MACRO_TO_RUS";
       #binding-cells = <0>;
-      bindings = < &kp LA(LS(N1)) &to 3 >;
+      bindings = < &kp LA(LS(N1)) &to 1 >;
     };
 
     macro_to_eng: macro_to_eng {
