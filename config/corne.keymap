@@ -34,24 +34,24 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  | M ] |  ,  |  .  |  /  | ESC  |
 //                    | LALT| LWR |LSHFT|   | SPC | RSE  | ENT |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &hold GRAVE T   &kp Y   &kp U        &hold O I      &kp P   &kp LBKT &kp BSPC
+   &kp ESC   &kp Q &kp W &kp E &kp R &hold &kp GRAVE &kp T   &kp Y   &kp U        &hold &kp O &kp I      &kp P   &kp LBKT &kp BSPC
    &kp TAB   &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold RBKT M &kp COMMA      &kp DOT &kp FSLH &kp ESC
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold &kp RBKT &kp M &kp COMMA      &kp DOT &kp FSLH &kp ESC
                   &kp LALT &mo 2 &kp LSHFT           &kp SPACE &mo 3        &kp RET
                         >;
                 };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |PSCRN| DEL |  UP |BSPC |PGUP |   | KP* | KP7 | KP8 | KP9 | KP/ | BSPC |
-// |  TAB |HOME | LFT | DWN | RGT | END |   | KP+ | KP4 | KP5 | KP6 | KP- |      |
-// | CTRL |     |VOL- |MUTE |VOL+ |PGDN |   | KP0 | KP1 | KP2 | KP3 | KP. |      |
-//                    | LALT|     |LSHFT|   | SPC |     | ENT |
+// |  ESC  | PSCR |  DEL  |  UP  | BSPC | PGUP |   | KP* | KP7 | KP8 | KP9 | KP/ | BSPC |
+// |  TAB  | HOME | LEFT  | DOWN | RGHT | END  |   | KP+ | KP4 | KP5 | KP6 | KP- |      |
+// | CTRL  |      | VOL-  | MUTE | VOL+ | PGDN |   | KP0 | KP1 | KP2 | KP3 | KP. |      |
+//                     | LALT |      | LSHFT|   | SPC |     | ENT |
                         bindings = <
-   &kp ESC    &kp PSCRN &kp DEL  &kp UP   &kp BSPC &kp PGUP         &kp KP_MULTIPLY &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_DIVIDE &kp BSPC
-   &kp TAB    &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END          &kp KP_PLUS     &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_MINUS  &trans
-   &kp LCTRL  &trans    &kp VOL_DOWN &kp MUTE &kp VOL_UP &kp PGDN   &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_DOT    &trans
-                                    &kp LALT     &trans       &kp LSHFT      &kp SPACE  &trans   &kp RET
+   &kp ESC     &kp PSCREEN &kp DEL     &kp UP      &kp BSPC    &kp PGUP        &kp KP_MULT     &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_DIV  &kp BSPC
+   &kp TAB     &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END         &kp KP_PLUS     &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS &trans
+   &kp LCTRL   &trans      &kp VOL_DOWN &kp MUTE    &kp VOL_UP  &kp PGDN        &kp KP_N0       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &trans
+                                                &kp LALT    &trans      &kp LSHFT               &kp SPACE       &trans      &kp KP_ENTER
                         >;
                 };
 
