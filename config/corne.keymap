@@ -48,7 +48,7 @@
 // | CTRL  |      | VOL-  | MUTE | VOL+ | PGDN |   | KP0 | KP1 | KP2 | KP3 | KP. |      |
 //                     | LALT |      | LSHFT|   | SPC |     | ENT |
                         bindings = <
-   &kp ESC     &kp PSCREEN &kp DEL     &kp UP      &kp BSPC    &kp PGUP        &kp KP_MULT     &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_DIV  &kp BSPC
+   &kp ESC     &kp PRINTSCREEN &kp DEL     &kp UP      &kp BSPC    &kp PGUP        &kp KP_MULT     &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_DIV  &kp BSPC
    &kp TAB     &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END         &kp KP_PLUS     &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS &trans
    &kp LCTRL   &trans      &kp VOL_DOWN &kp MUTE    &kp VOL_UP  &kp PGDN        &kp KP_N0       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &trans
                                                 &kp LALT    &trans      &kp LSHFT               &kp SPACE       &trans      &kp KP_ENTER
