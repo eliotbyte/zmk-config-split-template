@@ -23,7 +23,7 @@
    &lt 4 ESC &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
    &kp TAB   &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O    &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &to_rus LALT 0 &mo 2 &kp LSHFT   &kp SPACE &mo 3 &kp RET
+                  &to_rus LALT 0 &mo 2 &kp SPACE   &kp LSHFT &mo 3 &kp RET
                         >;
                 };
 
@@ -37,7 +37,7 @@
    &lt 4 ESC   &kp Q &kp W &kp E &kp R &hold &kp GRAVE &kp T   &kp Y   &kp U        &hold &kp O &kp I      &kp P   &kp LBKT &kp BSPC
    &kp TAB   &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold &kp RBKT &kp M &kp COMMA      &kp DOT &kp FSLH &kp ESC
-                  &to_eng LALT 0 &mo 2 &kp LSHFT           &kp SPACE &mo 3        &kp RET
+                  &to_eng LALT 0 &mo 2 &kp SPACE           &kp LSHFT &mo 3        &kp RET
                         >;
                 };
 
@@ -51,7 +51,7 @@
    &kp ESC     &kp PSCRN   &kp DEL     &kp UP      &kp BSPC    &kp PGUP        &kp KP_MULTIPLY   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_DIVIDE  &kp BSPC
    &kp TAB     &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END         &kp KP_PLUS     &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS &trans
    &kp LCTRL   &trans      &kp K_VOLUME_DOWN &kp K_MUTE    &kp K_VOLUME_UP  &kp PGDN        &kp KP_N0       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &trans
-                                                &kp LALT    &trans      &kp LSHFT               &kp SPACE       &trans      &kp KP_ENTER
+                                                &kp LALT    &trans      &kp SPACE               &kp LSHFT       &trans      &kp KP_ENTER
                         >;
                 };
 
@@ -65,7 +65,7 @@
    &kp  ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
    &kp  TAB  &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LALT &trans   &kp LSHFT   &kp SPACE   &trans    &kp RET
+                             &kp LALT &trans   &kp SPACE   &kp LSHFT   &trans    &kp RET
                         >;
                 };
 
