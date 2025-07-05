@@ -20,7 +20,7 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | ESC  |
 //                    | LALT| LWR |LSHFT|   | SPC | RSE  | ENT |
                         bindings = <
-   &ht ESC 4 &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
+   &lt 4 ESC &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
    &kp TAB   &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O    &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &to_rus LALT 0 &mo 2 &kp LSHFT   &kp SPACE &mo 3 &kp RET
@@ -34,7 +34,7 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  | M ] |  ,  |  .  |  /  | ESC  |
 //                    | LALT| LWR |LSHFT|   | SPC | RSE  | ENT |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &hold &kp GRAVE &kp T   &kp Y   &kp U        &hold &kp O &kp I      &kp P   &kp LBKT &kp BSPC
+   &lt 4 ESC   &kp Q &kp W &kp E &kp R &hold &kp GRAVE &kp T   &kp Y   &kp U        &hold &kp O &kp I      &kp P   &kp LBKT &kp BSPC
    &kp TAB   &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold &kp RBKT &kp M &kp COMMA      &kp DOT &kp FSLH &kp ESC
                   &to_eng LALT 0 &mo 2 &kp LSHFT           &kp SPACE &mo 3        &kp RET
