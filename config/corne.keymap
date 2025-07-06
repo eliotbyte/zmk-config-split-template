@@ -34,10 +34,10 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  | M ] |  ,  |  .  |  /  | ESC  |
 //                    | LALT| LWR |LSHFT|   | SPC | RSE  | ENT |
                         bindings = <
-   &lt 4 ESC    &kp Q &kp W &kp E &kp R &hold GRAVE &kp T       &kp Y   &kp U        &hold O I      &kp P   &kp LBKT &kp BSPC
-   &kp TAB      &kp A &kp S &kp D &kp F &kp G                   &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
-   &kp LCTRL    &kp Z &kp X &kp C &kp V &kp B                   &kp N   &hold RBKT M &kp COMMA      &kp DOT &kp FSLH &kp ESC
-                &to_eng LALT 0 &mo 2 &kp SPACE                  &kp LSHFT &mo 3      &kp RET
+   &lt 4 ESC    &kp Q &kp W &kp E &kp R &hold &kp GRAVE &kp T   &kp Y   &kp U        &hold &kp O &kp I      &kp P   &kp LBKT &kp BSPC
+   &kp TAB      &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
+   &kp LCTRL    &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold &kp RBKT &kp M &kp COMMA      &kp DOT &kp FSLH &kp ESC
+                 &to_eng LALT 0 &mo 2 &kp SPACE                  &kp LSHFT &mo 3      &kp RET
                         >;
                 };
 
