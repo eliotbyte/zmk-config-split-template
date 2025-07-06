@@ -15,57 +15,57 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | BSPC |
-// |  TAB |  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
+// |  TAB |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | ESC  |
+// | LSHFT|  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | GUI  |
-//                    | LALT| LWR |LSHFT|   | SPC | RSE  | ENT |
+//                    | LALT| LWR |SPACE|   | RET | RSE  | BSPC|
                         bindings = <
-   &lt 4 ESC &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
-   &kp TAB   &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O    &kp SQT
+   &kp TAB   &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &lt ESC 4
+   &kp LSHFT &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O    &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &kp LGUI
-                  &to_rus LALT 0 &mo 2 &kp SPACE   &kp LSHFT &mo 3 &kp RET
+                  &to_rus LALT 0 &mo 2 &kp SPACE   &kp RET &mo 3 &kp BSPC
                         >;
                 };
 
                 russian_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  Q  |  W  |  E  |  R  | T ` |   |  Y  |  U  | I O |  P  |  [  | BSPC |
-// |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '   |
+// |  TAB |  Q  |  W  |  E  |  R  | T ` |   |  Y  |  U  | I O |  P  |  [  | ESC  |
+// | LSHFT|  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  | M ] |  ,  |  .  |  /  | GUI  |
-//                    | LALT| LWR |LSHFT|   | SPC | RSE  | ENT |
+//                    | LALT| LWR |SPACE|   | RET | RSE  | BSPC|
                         bindings = <
-   &lt 4 ESC &kp Q &kp W &kp E &kp R &hold GRAVE T   &kp Y   &kp U        &hold O I      &kp P   &kp LBKT &kp BSPC
-   &kp TAB   &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
+   &kp TAB   &kp Q &kp W &kp E &kp R &hold GRAVE T   &kp Y   &kp U        &hold O I      &kp P   &kp LBKT &lt ESC 4
+   &kp LSHFT &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold RBKT M &kp COMMA      &kp DOT &kp FSLH &kp LGUI
-                &to_eng LALT 0 &mo 2 &kp SPACE       &kp LSHFT &mo 3 &kp RET
+                &to_eng LALT 0 &mo 2 &kp SPACE       &kp RET &mo 3 &kp BSPC
                         >;
                 };
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC  | PSCR |  DEL  |  UP  | BSPC | PGUP |   | KP* | KP7 | KP8 | KP9 | KP/ | BSPC |
-// |  TAB  | HOME | LEFT  | DOWN | RGHT | END  |   | KP+ | KP4 | KP5 | KP6 | KP- |      |
+// |  TAB  | PSCR |  DEL  |  UP  | ESC  | PGUP |   | KP* | KP7 | KP8 | KP9 | KP/ | ESC  |
+// | LSHFT | HOME | LEFT  | DOWN | RGHT | END  |   | KP+ | KP4 | KP5 | KP6 | KP- |      |
 // | CTRL  |      | VOL-  | MUTE | VOL+ | PGDN |   | KP0 | KP1 | KP2 | KP3 | KP. |      |
-//                     | LALT |      | LSHFT|   | SPC |     | ENT |
+//                     | LALT |      |SPACE|   | RET |     | BSPC|
                         bindings = <
-   &kp ESC     &kp PSCRN   &kp DEL     &kp UP      &kp BSPC    &kp PGUP        &kp KP_MULTIPLY   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_DIVIDE  &kp BSPC
-   &kp TAB     &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END         &kp KP_PLUS     &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS &trans
+   &kp TAB     &kp PSCRN   &kp DEL     &kp UP      &kp ESC     &kp PGUP        &kp KP_MULTIPLY   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_DIVIDE  &kp ESC
+   &kp LSHFT   &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END         &kp KP_PLUS     &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS &trans
    &kp LCTRL   &trans      &kp K_VOLUME_DOWN &kp K_MUTE    &kp K_VOLUME_UP  &kp PGDN        &kp KP_N0       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &trans
-                                                &kp LALT    &trans      &kp SPACE               &kp LSHFT       &trans      &kp KP_ENTER
+                                                &kp LALT    &trans      &kp SPACE               &kp RET       &trans      &kp BSPC
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// |  TAB |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | ESC  |
+// | LSHFT|     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | CTRL |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | LALT|     |LSHFT|   | SPC |     | ENT |
+//                    | LALT|     |SPACE|   | RET |     | BSPC|
                         bindings = <
-   &kp  ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp  TAB  &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+   &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp ESC
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LALT &trans   &kp SPACE   &kp LSHFT   &trans    &kp RET
+                             &kp LALT &trans   &kp SPACE   &kp RET   &trans    &kp BSPC
                         >;
                 };
 
