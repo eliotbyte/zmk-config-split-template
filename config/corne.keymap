@@ -17,12 +17,12 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | BSPC |
 // |  TAB |  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
-// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | ESC  |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | GUI  |
 //                    | LALT| LWR |LSHFT|   | SPC | RSE  | ENT |
                         bindings = <
    &lt 4 ESC &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
    &kp TAB   &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O    &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &kp LGUI
                   &to_rus LALT 0 &mo 2 &kp SPACE   &kp LSHFT &mo 3 &kp RET
                         >;
                 };
@@ -31,12 +31,12 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  | T ` |   |  Y  |  U  | I O |  P  |  [  | BSPC |
 // |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '   |
-// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  | M ] |  ,  |  .  |  /  | ESC  |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  | M ] |  ,  |  .  |  /  | GUI  |
 //                    | LALT| LWR |LSHFT|   | SPC | RSE  | ENT |
                         bindings = <
    &lt 4 ESC &kp Q &kp W &kp E &kp R &hold GRAVE T   &kp Y   &kp U        &hold O I      &kp P   &kp LBKT &kp BSPC
    &kp TAB   &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold RBKT M &kp COMMA      &kp DOT &kp FSLH &kp ESC
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B           &kp N   &hold RBKT M &kp COMMA      &kp DOT &kp FSLH &kp LGUI
                 &to_eng LALT 0 &mo 2 &kp SPACE       &kp LSHFT &mo 3 &kp RET
                         >;
                 };
