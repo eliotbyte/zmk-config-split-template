@@ -15,10 +15,10 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | ESC  |
+// |  TAB |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L  |  U  |  Y  |  ;  | BSPC |
 // | LSHFT|  A  |  R  |  S  |  T  |  D  |   |  H  |  N  |  E  |  I  |  O  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M  |  ,  |  .  |  /  | GUI  |
-//                    | LALT| LWR |SPACE|   | RET | RSE  | BSPC|
+//                    | LALT| LWR |SPACE|   | RET | RSE | ESC |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
    &kp LSHFT &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O    &kp SQT
@@ -29,10 +29,10 @@
 
                 russian_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  | T ` |   |  Y  |  U  | I O |  P  |  [  | ESC  |
+// |  TAB |  Q  |  W  |  E  |  R  | T ` |   |  Y  |  U  | I O |  P  |  [  | BSPC |
 // | LSHFT|  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  | M ] |  ,  |  .  |  /  | GUI  |
-//                    | LALT| LWR |SPACE|   | RET | RSE  | BSPC|
+//                    | LALT| LWR |SPACE|   | RET | RSE | ESC |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &hold GRAVE T   &kp Y   &kp U        &hold O I      &kp P   &kp LBKT &kp BSPC
    &kp LSHFT &kp A &kp S &kp D &kp F &kp G           &kp H   &kp J        &kp K          &kp L   &kp SEMI &kp SQT
@@ -43,12 +43,12 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB  | PSCR |  DEL  |  UP  | ESC  | PGUP |   | KP* | KP7 | KP8 | KP9 | KP/ | ESC  |
+// |  TAB  | PSCR |  DEL  |  UP  | BSPC | PGUP |   | KP* | KP7 | KP8 | KP9 | KP/ | BSPC |
 // | LSHFT | HOME | LEFT  | DOWN | RGHT | END  |   | KP+ | KP4 | KP5 | KP6 | KP- |      |
 // | CTRL  |      | VOL-  | MUTE | VOL+ | PGDN |   | KP0 | KP1 | KP2 | KP3 | KP. |      |
-//                     | LALT |      |SPACE|   | RET |     | BSPC|
+//                        | LALT |      |SPACE |   | RET |     | ESC |
                         bindings = <
-   &kp TAB     &kp PSCRN   &kp DEL     &kp UP      &kp ESC     &kp PGUP        &kp KP_MULTIPLY   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_DIVIDE  &kp ESC
+   &kp TAB     &kp PSCRN   &kp DEL     &kp UP      &kp BSPC    &kp PGUP        &kp KP_MULTIPLY   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_DIVIDE  &kp ESC
    &kp LSHFT   &kp HOME    &kp LEFT    &kp DOWN    &kp RIGHT   &kp END         &kp KP_PLUS     &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS &trans
    &kp LCTRL   &trans      &kp K_VOLUME_DOWN &kp K_MUTE    &kp K_VOLUME_UP  &kp PGDN        &kp KP_N0       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &trans
                                                 &kp LALT    &trans      &kp SPACE               &kp RET       &trans      &kp BSPC
